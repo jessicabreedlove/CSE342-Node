@@ -1,0 +1,23 @@
+{
+  "name": "cse341-backend2",
+  "version": "1.0.0",
+  "description": "week 1",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessicabreedlove/CSE341.git"
+  },
+  "author": "Jessica Reece",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessicabreedlove/CSE341/issues"
+  },
+  "homepage": "https://github.com/jessicabreedlove/CSE341#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
