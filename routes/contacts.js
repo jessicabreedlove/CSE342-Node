@@ -3,10 +3,7 @@
 const { MongoClient } = require("mongodb");
 
 async function main() {
-  const uri =
-    "mongodb+srv://test:<cangetin55>@csejareece.canpe.mongodb.net/cse341-1?retryWrites=true&w=majority";
-
-  const client = new MongoClient(uri);
+  const client = new MongoClient(process.env.MONGODB_URI);
 
   try {
     await client.connect();
