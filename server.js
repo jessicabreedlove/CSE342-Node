@@ -1,14 +1,9 @@
-const routes = require("express").Router();
-
-routes.get("/", (req, res) => {
-  res.send("Sarah Birch");
-});
-
-module.exports = routes;
-
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 3000;
+const connect = require("./db/connect");
+
+connect.initDatabase();
 
 app.use("/", require("./routes"));
 
