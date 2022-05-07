@@ -24,8 +24,8 @@ content-type: application/json
   "favcolor": "purple"
 }
 
-###Put contact
-PUT https://cse341reece.herokuapp.com/contacts
+###Put contact local
+PUT http://localhost:3000/contacts
 content-type: application/json
 {
   "fname": "Ron",
@@ -33,6 +33,18 @@ content-type: application/json
   "email": "example8@gmail.com",
   "phone": "555-555-5555",
   "bday": "september",
+  "favcolor": "purple"
+}
+
+###Put contact
+PUT https://cse341reece.herokuapp.com/contacts/626823f5808ee068d6b40756
+content-type: application/json
+{
+  "fname": "Sam",
+  "lname": "Reece",
+  "email": "example69@gmail.com",
+  "phone": "555-555-5555",
+  "bday": "july",
   "favcolor": "purple"
 }
 
