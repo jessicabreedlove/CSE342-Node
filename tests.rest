@@ -1,14 +1,40 @@
 
-
+###get all contacts local
 GET http://localhost:3000/contacts
 
-###
+###get contact by id local
 
 GET http://localhost:3000/contacts/626823f5808ee068d6b40756
 
-###
+###get all contacts heroku
 GET https://cse341reece.herokuapp.com/contacts
 
-###
-
+###get contact by id heroku
 GET https://cse341reece.herokuapp.com/contacts/626823f5808ee068d6b40756
+
+###create contact
+POST https://cse341reece.herokuapp.com/contacts
+content-type: application/json
+{
+  "fname": "Ron",
+  "lname": "Swanson",
+  "email": "example8@gmail.com",
+  "phone": "555-555-5555",
+  "bday": "september",
+  "favcolor": "purple"
+}
+
+###Put contact
+PUT https://cse341reece.herokuapp.com/contacts
+content-type: application/json
+{
+  "fname": "Ron",
+  "lname": "Swanson",
+  "email": "example8@gmail.com",
+  "phone": "555-555-5555",
+  "bday": "september",
+  "favcolor": "purple"
+}
+
+###Delete contact 
+DELETE 
