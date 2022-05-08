@@ -1,8 +1,8 @@
-const connect = require('../db/connect');
-const ObjectId = require('connect').ObjectId;
+const mongodb = require('../db/connect');
+const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res) => {
-  const result = await connect.getDb().db().collection('contacts').find();
+  const result = await mongodb.getDb().db().collection('contacts').find();
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
     res.status(200).json(lists);
@@ -11,7 +11,7 @@ const getAll = async (req, res) => {
 
 const getSingle = async (req, res) => {
   const userId = new ObjectId(req.params.id);
-  const result = await connect
+  const result = await mongodb
     .getDb()
     .db()
     .collection('contacts')
@@ -30,7 +30,7 @@ const createContact = async (req, res) => {
     favoriteColor: req.body.favoriteColor,
     birthday: req.body.birthday,
   };
-  const response = await connect
+  const response = await mongodb
     .getDb()
     .db()
     .collection('contacts')
@@ -56,7 +56,7 @@ const updateContact = async (req, res) => {
     favoriteColor: req.body.favoriteColor,
     birthday: req.body.birthday,
   };
-  const response = await connect
+  const response = await mongodb
     .getDb()
     .db()
     .collection('contacts')
@@ -75,7 +75,7 @@ const updateContact = async (req, res) => {
 
 const deleteContact = async (req, res) => {
   const userId = new ObjectId(req.params.id);
-  const response = await connect
+  const response = await mongodb
     .getDb()
     .db()
     .collection('contacts')
