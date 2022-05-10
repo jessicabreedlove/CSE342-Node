@@ -20,8 +20,8 @@ const getSingle = async (req, res) => {
 
 const createContact = async (req, res) => {
   const contact = {
-    firstName: req.body.firstName,
-    lastName: req.body.lastName,
+    fname: req.body.fname,
+    lname: req.body.lname,
     email: req.body.email,
     favoriteColor: req.body.favoriteColor,
     birthday: req.body.birthday,
@@ -42,8 +42,8 @@ const updateContact = async (req, res) => {
   const userId = new ObjectId(req.params.id);
   // be aware of updateOne if you only want to update specific fields
   const contact = {
-    firstName: req.body.firstName,
-    lastName: req.body.lastName,
+    fname: req.body.fname,
+    lname: req.body.lname,
     email: req.body.email,
     favoriteColor: req.body.favoriteColor,
     birthday: req.body.birthday,

@@ -52,4 +52,4 @@ content-type: application/json
 }
 
 ###Delete contact 
-DELETE https://cse341reece.herokuapp.com/contacts/627ad4d8b611396e68b042eb HTTP/1.1
+DELETE https://cse341reece.herokuapp.com/contacts/627ad7bf3f4acfab3bfc3221 HTTP/1.1
