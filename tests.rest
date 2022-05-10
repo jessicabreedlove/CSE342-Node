@@ -7,14 +7,15 @@ GET http://localhost:3000/contacts
 GET http://localhost:3000/contacts/626823f5808ee068d6b40756
 
 ###get all contacts heroku
-GET https://cse341reece.herokuapp.com/contacts
+GET https://cse341reece.herokuapp.com/contacts HTTP/1.1
 
 ###get contact by id heroku
-GET https://cse341reece.herokuapp.com/contacts/626823f5808ee068d6b40756
+GET https://cse341reece.herokuapp.com/contacts/626823f5808ee068d6b40756 HTTP/1.1
 
 ###create contact
-POST https://cse341reece.herokuapp.com/contacts
+POST https://cse341reece.herokuapp.com/contacts HTTP/1.1
 content-type: application/json
+
 {
   "fname": "Ron",
   "lname": "Swanson",
@@ -25,8 +26,9 @@ content-type: application/json
 }
 
 ###Put contact local
-PUT http://localhost:3000/contacts
+PUT http://localhost:3000/contacts HTTP/1.1
 content-type: application/json
+
 {
   "fname": "Ron",
   "lname": "Swanson",
@@ -37,8 +39,9 @@ content-type: application/json
 }
 
 ###Put contact
-PUT https://cse341reece.herokuapp.com/contacts/626823f5808ee068d6b40756
+PUT https://cse341reece.herokuapp.com/contacts/627ad4d8b611396e68b042eb HTTP/1.1
 content-type: application/json
+
 {
   "fname": "Sam",
   "lname": "Reece",
@@ -49,4 +52,4 @@ content-type: application/json
 }
 
 ###Delete contact 
-DELETE 
+DELETE https://cse341reece.herokuapp.com/contacts/627ad4d8b611396e68b042eb HTTP/1.1
