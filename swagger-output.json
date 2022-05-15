@@ -5,11 +5,9 @@
     "description": "Contacts in Mongodb accessed",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "https://cse341reece.herokuapp.com/",
   "basePath": "/",
-  "schemes": [
-    "http"
-  ],
+  "schemes": ["http"],
   "paths": {
     "/": {
       "get": {
@@ -32,9 +30,7 @@
     "/contacts/": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [],
         "responses": {
           "200": {
@@ -83,9 +79,7 @@
     "/contacts/{id}": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "id",

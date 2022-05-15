@@ -5,7 +5,7 @@ const doc = {
     title: 'Jessica Reece Contact API',
     description: 'Contacts in Mongodb accessed',
   },
-  host: 'localhost:3000',
+  host: 'https://cse341reece.herokuapp.com/',
   schemes: ['http'],
 };
 
