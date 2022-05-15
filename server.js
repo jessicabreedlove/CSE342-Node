@@ -12,7 +12,7 @@ app.use(bodyParser.json()).use('/', require('./routes'));
 // const express = require('express');
 // const router = express.Router();
 const swaggerUi = require('swagger-ui-express');
-const swaggerDocument = require('../swagger-output.json');
+const swaggerDocument = require('./swagger-output.json');
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.get('/api-docs', swaggerUi.setup(swaggerDocument));
