@@ -5,7 +5,7 @@
     "description": "Contacts in Mongodb accessed",
     "version": "1.0.0"
   },
-  "host": "https://cse341reece.herokuapp.com",
+  "host": "cse341reece.herokuapp.com",
   "basePath": "/",
   "schemes": ["http"],
   "paths": {
