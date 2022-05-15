@@ -6,7 +6,7 @@ const doc = {
     description: 'Contacts in Mongodb accessed',
   },
   host: 'cse341reece.herokuapp.com',
-  schemes: ['http'],
+  schemes: ['https'],
 };
 
 const outputFile = './swagger-output.json';
