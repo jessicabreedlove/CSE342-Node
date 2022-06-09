@@ -9,8 +9,6 @@ connect.initDatabase();
 app.use(bodyParser.json()).use('/', require('./routes'));
 
 //help from Adam
-// const express = require('express');
-// const router = express.Router();
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger-output.json');
 
@@ -26,8 +24,6 @@ app.use((req, res, next) => {
     'Access-Control-Allow-Headers',
     'Origin, X-Requested-With, Content-Type, Accept, Z-Key, Content-Disposition'
   );
-
-  // res.setHeader('Content-Type', 'application/json');
 
   res.setHeader(
     'Access-Control-Allow-Methods',
